@@ -21,12 +21,12 @@ dubbo是阿里开源的 RPC服务调用框架。</br>
 ![image](https://cloud.githubusercontent.com/assets/3062921/9924343/158a917c-5d31-11e5-8730-632b1c88ed1e.png)</br>
 jar包缺省依赖</br>
 ![image](https://cloud.githubusercontent.com/assets/3062921/9924381/7eee2516-5d31-11e5-9d49-b72e5295e716.png)</br>
-		可以看出，zookeeper、redis、mina等等包都没有依赖，那怎么运行呢？
-		其实dubbox使用的是JDK5+提供的SPI进行自动加载jar包的机制，不过他对原始SPI进行了改进，用到时才加载。
-		比如你想使用zookeeper作为注册中心，那么你就要做以下2个事情。
-		1、在spring配置文件中增加<dubbo:registry address="zookeeper://127.0.0.1:2181"/>
-		2、在你pom中加入：
-		<dependency>
+    可以看出，zookeeper、redis、mina等等包都没有依赖，那怎么运行呢？
+    其实dubbox使用的是JDK5+提供的SPI进行自动加载jar包的机制，不过他对原始SPI进行了改进，用到时才加载。
+    比如你想使用zookeeper作为注册中心，那么你就要做以下2个事情。
+    1、在spring配置文件中增加<dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    2、在你pom中加入：
+    <dependency>
     		<groupId>org.apache.zookeeper</groupId>
         <artifactId>zookeeper</artifactId>
         <version>3.4.6</version>
