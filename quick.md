@@ -157,6 +157,7 @@
     并且返回值是`LoginResult`这个对象，`Consumer`本地并没有User、LoginResult、LoginService对象。  
 
 我认为有3种方式去实现。
+
 1. 使用String json方式进行交互。
 2. 将各业务平台API进行梳理，API无需过多的说明，直接把interface、javabean放到服务器上，谁需要调用谁就将所需文件集成到本地。（适合其他不是很熟悉的业务平台）
 3. 内部的业务平台所有interface、javabean以jar包方式打到maven 仓库中，需要的业务平台在自己的pom中加入依赖（推荐）。
