@@ -65,4 +65,4 @@ dubbo是阿里开源的 RPC服务调用框架。</br>
 5. 等等等...
 
 ### 开始写代码！
-* [快速开始](https://github.com/shuvigoss/dubbox-demos/blob/master/quick.md)
+* [快速开始](https://github.com/shuvigoss/dubbox-demos/blob/master/doc/quick.md)
