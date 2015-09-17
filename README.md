@@ -39,3 +39,17 @@ dubbo是阿里开源的 RPC服务调用框架。</br>
         <artifactId>zkclient</artifactId>
         <version>0.1</version>
     </dependency>
+
+### 使用dubbox后系统架构
+#### 现ECS架构
+![image](https://cloud.githubusercontent.com/assets/3062921/9926905/43cf804a-5d4c-11e5-8af3-22488a868d84.png)
+
+可以看出来，这种垂直架构的问题很多。
+
+
+1.系统间耦合严重，系统A调用系统B使用的是系统B提供的jar包（并非远程调用jar包，是将业务逻辑打包给A，实现A调用B的过程变成了A本地调用）。
+2.同一机房调用使用Http协议，效率以及性能很低。
+3.整体系统架构错综复杂，没法统一一个完整的系统架构图。
+4.运维工作复杂，无法统一监控整体系统，出现问题排查起来很难。
+5.等等...
+
