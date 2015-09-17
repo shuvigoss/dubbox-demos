@@ -66,3 +66,5 @@ dubbo是阿里开源的 RPC服务调用框架。</br>
 
 ### 开始写代码！
 * [快速开始](https://github.com/shuvigoss/dubbox-demos/blob/master/doc/quick.md)
+* [应用配置](https://github.com/shuvigoss/dubbox-demos/blob/master/doc/application.md)
+* [协议配置](https://github.com/shuvigoss/dubbox-demos/blob/master/doc/protocol.md)
