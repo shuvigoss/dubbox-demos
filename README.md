@@ -56,7 +56,7 @@ dubbo是阿里开源的 RPC服务调用框架。</br>
 #### dubbox后ECS架构
 ![image](https://cloud.githubusercontent.com/assets/3062921/9927786/f2ea25c4-5d53-11e5-90d8-afcb4a16362d.png)
 
-对于使用dubbox后的系统，改早点在于在weblogic application 中加入了dubbox container（dubbox.jar）。
+对于使用dubbox后的系统，改造点在于在weblogic application 中加入了dubbox container（dubbox.jar）。
 
 1. 服务间不再耦合，提供服务后，无需考虑服务提供给谁，提供什么样的协议。谁需要调用你，就在注册中心订阅你就可以。
 2. 服务调用使用基于NIO、HTTP等多种协议，性能可控，只需要提供业务服务即可。
