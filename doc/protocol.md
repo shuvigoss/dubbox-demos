@@ -53,7 +53,7 @@
 	    <version>0.26</version>
 	</dependency>
 
-	<dubbo:protocol name="dubbo" serialization="kryo"/>
+	<dubbo:protocol name="dubbo" serialization="kryo" optimizer="com.alibaba.dubbo.demo.SerializationOptimizerImpl"/>
 
 
 	<dependency>
@@ -61,8 +61,8 @@
 	    <artifactId>fst</artifactId>
 	    <version>1.55</version>
 	</dependency>
-	
-	<dubbo:protocol name="dubbo" serialization="fst"/>
+
+	<dubbo:protocol name="dubbo" serialization="fst" optimizer="com.alibaba.dubbo.demo.SerializationOptimizerImpl"/>
 
 	//可将现有需要序列化的class注册进去，能够更快的进行序列化。
 	public class SerializationOptimizerImpl implements SerializationOptimizer {
