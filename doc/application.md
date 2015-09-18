@@ -1,4 +1,4 @@
-# 应用配置<dubbo:application/>
+# 应用配置dubbo:application
 配置类：`com.alibaba.dubbo.config.ApplicationConfig`
 
 [具体描述](http://dubbo.io/User+Guide-zh.htm#UserGuide-zh-%253Cdubbo%253Aapplication%252F%253E)
